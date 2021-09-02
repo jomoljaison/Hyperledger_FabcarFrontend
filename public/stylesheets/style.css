@@ -1,0 +1,28 @@
+.container{
+    text-align: center; 
+    margin-top: 30px;
+}
+
+body{
+    color: darkred;
+}
+.nav{
+    margin-bottom: 70px;
+}
+
+input{
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 30%;
+}
+
+i{
+    font-size: 70px;
+}
+
+button{
+    margin-top: 30px; 
+    padding: 10px 40px;
+}
