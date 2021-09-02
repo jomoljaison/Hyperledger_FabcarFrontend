@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/head') %>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>ChangeOwner Page</h1>
+     
+      <%- include('partials/navbar') %>
+
+      <form action="./api/changeowner" method="post">
+        CarNo <input type="text" name="carno" /> <br>
+        Owner <input type="text" name="owner" /> <br>
+        <button type="submit" class="btn btn-warning">SUBMIT</button>
+      </form>
+    </div>
+  </body>
+</html>

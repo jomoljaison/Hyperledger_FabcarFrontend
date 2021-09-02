@@ -1,0 +1,51 @@
+<% if(activate=="index"){ %>
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="./">Home</a></li>
+        <li role="presentation"><a href="./queryallcars">Query all cars</a></li>
+        <li role="presentation"><a href="./createcar">Create a car</a></li>
+        <li role="presentation"><a href="./querycar">Query a car</a></li>
+        <li role="presentation"><a href="./changeowner">Change owner</a></li>
+        <li role="presentation"><a href="./GetCarHistory">Transaction</a></li>
+
+    </ul>
+<% }else if(activate=="query"){ %>
+    <ul class="nav nav-tabs"> 
+        <li role="presentation"><a href="./">Home</a></li>
+        <li role="presentation" class="active"><a href="#">Query all cars</a></li>
+        <li role="presentation"><a href="./createcar">Create a car</a></li>
+        <li role="presentation"><a href="./querycar">Query a car</a></li>
+        <li role="presentation"><a href="./changeowner">Change owner</a></li>
+        <li role="presentation"><a href="./GetCarHistory">Transaction</a></li>
+
+    </ul>
+<% }else if(activate=="createcar"){ %>
+    <ul class="nav nav-tabs"> 
+        <li role="presentation"><a href="./">Home</a></li>
+        <li role="presentation"><a href="./queryallcars">Query all cars</a></li>
+        <li role="presentation" class="active"><a href="#">Create a car</a></li>
+        <li role="presentation"><a href="./querycar">Query a car</a></li>
+        <li role="presentation"><a href="./changeowner">Change owner</a></li>
+        <li role="presentation"><a href="./GetCarHistory">Transaction</a></li>
+
+    </ul>
+<% }else if(activate=="querycar"){ %>
+    <ul class="nav nav-tabs"> 
+        <li role="presentation"><a href="./">Home</a></li>
+        <li role="presentation"><a href="./queryallcars">Query all cars</a></li>
+        <li role="presentation"><a href="./createcar">Create a car</a></li>
+        <li role="presentation" class="active"><a href="#">Query a car</a></li>
+        <li role="presentation"><a href="./changeowner">Change owner</a></li>
+        <li role="presentation"><a href="./GetCarHistory">Transaction</a></li>
+
+     </ul>
+<% }else if(activate=="GetCarHistory"){ %>
+    <ul class="nav nav-tabs"> 
+        <li role="presentation"><a href="./">Home</a></li>
+        <li role="presentation"><a href="./queryallcars">Query all cars</a></li>
+        <li role="presentation"><a href="./createcar">Create a car</a></li>
+        <li role="presentation"><a href="./querycar">Query a car</a></li>
+        <li role="presentation" class="active"><a href="#">Change owner</a></li>
+        <li role="presentation"><a href="./GetCarHistory">Transaction</a></li>
+
+    </ul>
+<% } %>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/head') %>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>QueryCar </h1>
+   
+      <%- include('partials/navbar') %>
+
+      <form action="./api/querycar" method="get">
+        CarNo <input type="text" name="carno" /> <br>
+        <button type="submit" class="btn btn-info">SUBMIT</button>
+      </form>
+    </div>
+  </body>
+</html>

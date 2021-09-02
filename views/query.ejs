@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('partials/head') %>
+</head>
+
+<body>
+    <div class="container">
+     
+     <h1>List of Cars</h1>
+      <%- include('partials/navbar')  %>
+
+      <button class="btn btn-info">Query All Cars</button>
+      
+      <div id="head">
+        <h2>Fabcar Query Result</h2>
+      </div>
+      <div id="div1">
+      </div>
+
+    </div>
+</body>
+</html>
+
+<script>
+  $(document).ready(function(){
+    $("#head").hide();
+    $("button").click(function(){
+      $.get("./api/querycars", function(data, status){
+        
+        $("#head").show()
+        $("#div1").empty();
+        for(var i=0; i < data.length; i++)
+        {
+          $("#div1").append(JSON.stringify(data[i]));
+          $("#div1").append("<br>");
+        } 
+      });
+    });
+  });
+</script>
